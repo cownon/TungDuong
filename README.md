@@ -1,21 +1,34 @@
-# About me
-# 👋 Hello! I'm YunNKT
-🎓 I'm a student at PTIT University  
-💻 I like Math, Data and structure
-I’m a third-year student at Posts and Telecommunications Institute of Technology (PTIT), I am currently learning **Web Backend development, data processing, and AI**. I have a good grasp of each of these skills and continue to strengthen my knowledge through hands-on projects.
 
-## 🚀 Skills
-- Java, Spring Boot
-- HTML/CSS, JavaScript, ReactJS
-- SQL Server, MySQL
+# Getting started
 
-## 🧰 Tools I Use
-- VS Code, IntelliJ IDEA
-- Git & GitHub
-- Postman, Figma
+There are 2 way to run this project 
+1. Run in local 
+Setup docker and docker compose then run to start mssql and mail server service and utility services. 
+```
+docker compose up -d 
+```
+Project can be manually setup with mssql database `clockeedb` with password for `sa` is `example_123`
 
-## 📌 Projects
-- [Tùng Dương](https://github.com/cownon/Clockee) This project is about developing a website for an online business, including features such as product display, shopping cart, order management, and user authentication.
 
-## Connect me
-- Email: duongnkt.it2004@gmail.com
+Running Clockee server Spring Boot with unix 
+```
+cd clockee-server 
+make build
+```
+Running Clockee server Spring Boot with window 
+```
+cd clockee-server 
+make build-window 
+```
+
+Running Clockee client Next.js with npm 
+``` 
+cd clockee-ui
+npm install 
+npm run dev 
+```
+# For demo 
+Seed account for test environment 
+- User: `user@clockee.com`/`clockee123`
+- Product admin: `admin@clockee.com`/`clockee123`
+- Inventory manager: `quanlykho@clockee.com`/`clockee123`
